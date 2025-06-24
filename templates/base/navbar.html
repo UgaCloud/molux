@@ -3,7 +3,7 @@
       <div class="container nav-container">
         <div class="responsive-mobile-menu">
           <div class="mobile-logo">
-            <a href="home-v1.html">
+            <a href="{% url 'home' %}">
               <img src="{% static 'assets/img/molux.png' %}" alt="logo" style="width: 100px;"/>
             </a>
           </div>
@@ -42,10 +42,10 @@
         </div>
         <div class="collapse navbar-collapse" id="tp_main_menu">
           <div class="logo-wrapper desktop-logo">
-            <a href="home-v1.html" class="main-logo">
+            <a href="{% url 'home' %}" class="main-logo">
               <img src="{% static 'assets/img/molux.png' %}" alt="logo" />
             </a>
-            <a href="home-v1.html" class="sticky-logo">
+            <a href="{% url 'home' %}" class="sticky-logo">
               <img src="{% static 'assets/img/molux.png' %}" alt="logo" />
             </a>
           </div>
