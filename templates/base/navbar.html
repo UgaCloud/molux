@@ -1,0 +1,118 @@
+{% load static %}
+    <nav class="navbar navbar-area navbar-expand-lg nav-style-01 viaje-go-top">
+      <div class="container nav-container">
+        <div class="responsive-mobile-menu">
+          <div class="mobile-logo">
+            <a href="home-v1.html">
+              <img src="{% static 'assets/img/molux.png' %}" alt="logo" style="width: 100px;"/>
+            </a>
+          </div>
+          <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#tp_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggle-icon">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </span>
+          </button>
+          <div class="nav-right-content">
+            <ul class="pl-0">
+              <!-- <li class="top-bar-btn-booking">
+                <a class="btn btn-yellow" href="/tour-details">Book Now <i class="fa fa-paper-plane"></i></a>
+              </li>
+              <li class="tp-lang">
+                <div class="tp-lang-wrap">
+                  <select class="select single-select">
+                    <option value="1">ENG</option>
+                    <option value="2">BAN</option>
+                    <option value="3">Chinese</option>
+                    <option value="3">Spanish</option>
+                  </select>
+                </div>
+              </li>
+              <li class="search">
+                <i class="ti-search"></i>
+              </li> -->
+              <!-- <li class="notification">
+                <a class="signUp-btn" href="#">
+                  <i class="fa fa-user-o"></i>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="tp_main_menu">
+          <div class="logo-wrapper desktop-logo">
+            <a href="home-v1.html" class="main-logo">
+              <img src="{% static 'assets/img/molux.png' %}" alt="logo" />
+            </a>
+            <a href="home-v1.html" class="sticky-logo">
+              <img src="{% static 'assets/img/molux.png' %}" alt="logo" />
+            </a>
+          </div>
+          <ul class="navbar-nav">
+            <li>
+              <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>
+              <a href="{% url 'about' %}">About Us</a>
+            </li>
+
+            <li>
+              <a href="{% url 'gallery' %}">Gallery</a>
+            </li>
+
+            <!-- <li class="menu-item-has-children">
+              <a href="#">Pages</a>
+              <ul class="sub-menu">
+                <li><a href="/tour-list">Tours List</a></li>
+                <li><a href="/tour-list-v2">Tours List 02</a></li>
+                <li><a href="/tour-list-v3">Tours List 03</a></li>
+                <li><a href="/tour-details">Tours Details</a></li>
+                <li><a href="/destination-list">Destination List</a></li>
+                <li><a href="/destination-list-v2">Destination List 2</a></li>
+                <li><a href="/destination-details">Destination Details</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/gallery-details">Gallery Details</a></li>
+                <li><a href="/comming-soon">Comming soon</a></li>
+                <li><a href="/error">404</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/user-profile">User Profile</a></li>
+              </ul>
+            </li> -->
+            
+            <!-- <li class="menu-item-has-children">
+              <a href="/blog">Blog</a>
+              <ul class="sub-menu">
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/blog-v2">Blog 02</a></li>
+                <li><a href="/blog-v3">Blog 03</a></li>
+                <li><a href="/blog-details">Blog Details</a></li>
+              </ul>
+            </li> -->
+            <li>
+              <a href="{% url 'contact' %}">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right-content">
+          <!-- <ul>
+            <li>
+              <a class="btn btn-yellow" href="/tour-details">Book Now <i class="fa fa-paper-plane"></i></a>
+            </li>
+            <li class="tp-lang">
+              <div class="tp-lang-wrap">
+                <select class="select single-select">
+                  <option value="1">ENG</option>
+                  <option value="2">BAN</option>
+                  <option value="3">Chinese</option>
+                  <option value="3">Spanish</option>
+                </select>
+              </div>
+            </li>
+            <li class="search">
+              <i class="ti-search"></i>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
