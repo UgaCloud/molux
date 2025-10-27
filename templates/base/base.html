@@ -33,6 +33,7 @@
     <!-- responsive css -->
     <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
 
 </head>
 <body>
@@ -59,7 +60,33 @@
 
 
 
-
+   <!-- Success Modal -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal modal-success">
+            <div class="modal-header">
+                <div class="modal-icon">✓</div>
+                <div class="modal-title">Success!</div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-message">Your message has been sent successfully! We'll get back to you soon.</p>
+                <button class="modal-btn" id="success-ok-btn">OK</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Error Modal -->
+    <div class="modal-overlay" id="error-modal">
+        <div class="modal modal-error">
+            <div class="modal-header">
+                <div class="modal-icon">!</div>
+                <div class="modal-title">Error</div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-message">Failed to send message. Please try again later or contact us directly.</p>
+                <button class="modal-btn" id="error-ok-btn">Try Again</button>
+            </div>
+        </div>
+    </div>
 
 
 
