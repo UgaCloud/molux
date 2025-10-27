@@ -32,6 +32,7 @@
 
     <!-- responsive css -->
     <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </head>
 <body>
@@ -60,27 +61,10 @@
 
 
 
-<script>
-  (function(){
-    emailjs.init("GKOZLPegsXap75Mkj"); // Replace with your actual public key from EmailJS
-  })();
 
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    emailjs.sendForm('service_yxwfrr4', 'template_gsqcpzq', this)
-      .then(function(response) {
-        alert('Your message has been sent successfully!');
-        document.getElementById('contact-form').reset();
-      }, function(error) {
-        alert('Failed to send message. Please try again later.');
-        console.error('EmailJS Error:', error);
-      });
-  });
-</script>
 
 <!-- all plugins here -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 <script src="{% static 'assets/js/jquery-2.2.4.min.js' %}"></script>
 <script src="{% static 'assets/js/popper.min.js' %}"></script>
 <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
